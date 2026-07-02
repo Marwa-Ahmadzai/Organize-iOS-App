@@ -8,17 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var tabRouter: TabRouter
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(selection: $tabRouter.selectedTab) {
+            CalendarView()
+                .tabItem {
+                    Label("Calendar", systemImage: "calendar")
+                }
+                .tag(0)
+            
+            TodoListView()
+                .tabItem {
+                    Label("ToDo List", systemImage: "checklist")
+                }
+                .tag(1)
+            
+            FinanceView()
+                .tabItem {
+                    Label("Finance", systemImage: "dollarsign.circle")
+                }
+                .tag(2)
+            
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
+                }
+                .tag(3)
+            
+            SearchView()
+                .tabItem {
+                    Label("Search", systemImage: "magnifyingglass")
+                }
+                .tag(4)
         }
-        .padding()
+        .tint(.blue)
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environmentObject(TabRouter())
+            .preferredColorScheme(.dark)
+    }
 }
