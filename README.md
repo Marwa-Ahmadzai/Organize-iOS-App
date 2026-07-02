@@ -1,45 +1,30 @@
-# 📱 Organize – All-in-One Productivity iOS App
+# 📱 Organize – iOS Productivity App
 
-A comprehensive iOS productivity application built with **SwiftUI** that combines calendar management, to-do lists, finance tracking, and smart search in one seamless experience.
+An all-in-one productivity app built with SwiftUI that helps you manage events, tasks, and finances.
 
 ---
 
 ## 📱 Features
 
-| Feature | Description |
-|:---|:---|
-| 📅 **Calendar** | Monthly calendar view with event management, day selection, and quick add |
-| ✅ **To-Do List** | Categorized reminders with completion tracking and filtering |
-| 💰 **Finance Tracker** | Income/expense tracking with visual statistics and balance overview |
-| 🔍 **Smart Search** | Unified search across events, reminders, and transactions |
-| 🌙 **Dark Mode** | Built-in dark/light theme toggle with persistence |
-| 🔔 **Notifications** | Configurable notification preferences |
+- 📅 **Calendar** – Add and manage events with a monthly calendar view
+- ✅ **To-Do List** – Create reminders with categories (Work, Family, Urgent)
+- 💰 **Finance Tracker** – Track income and expenses with visual stats
+- 🔍 **Search** – Search across events, reminders, and transactions
+- 🌙 **Dark Mode** – Toggle between light and dark themes
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category | Technology |
-|:---|:---|
-| **Language** | Swift |
-| **UI Framework** | SwiftUI |
-| **Architecture** | MVVM (Model-View-ViewModel) |
-| **State Management** | @State, @Binding, @Published, @EnvironmentObject |
-| **Data Persistence** | AppStorage for user preferences |
-| **Navigation** | TabView with programmatic routing |
+- **Language:** Swift
+- **UI Framework:** SwiftUI
+- **Architecture:** MVVM
+- **State Management:** @State, @Published, @EnvironmentObject
 
 ---
 
-## 📸 Screenshots
+## 🚀 Getting Started
 
-*(Add screenshots here after running the app)*
-
-| Calendar | To-Do List | Finance | Search |
-|:---:|:---:|:---:|:---:|
-| [Add screenshot] | [Add screenshot] | [Add screenshot] | [Add screenshot] |
-
----
-
-## 🏗️ Architecture
-
-The app follows the **MVVM** pattern with a shared routing system:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Marwa-Ahmadzai/Organize-iOS-App.git
